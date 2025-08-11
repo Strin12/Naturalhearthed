@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Natural Hearted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ayuda.css">
+</head>
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="social-bar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <!-- Navbar -->
+    <nav>
+        <img src="LOGO NATURAL-15.png" alt="Natural Hearted Logo" class="logo">
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li class="dropdown">
+                <span class="dropdown-toggle">Acerca de <i class="fas fa-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        
+        <!-- Menú hamburguesa para móviles -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="help-hero">
+        <div class="container">
+            <h1>¿Cómo podemos ayudarte?</h1>
+            <p>Encuentra respuestas a tus preguntas o ponte en contacto con nuestro equipo</p>
+        </div>
+    </section>
+
+    <!-- Sección de Ayuda/FAQ -->
+    <section id="ayuda" class="help-section">
+        <div class="container">
+            <div class="help-grid">
+                <!-- Columna izquierda - Información de contacto -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h2><i class="fas fa-map-marker-alt"></i> Visítanos</h2>
+                        <p>Av. Paseo de la Reforma 123<br>Col. Juárez, Cuauhtémoc<br>Ciudad de México, 06600</p>
+                        
+                        <h2><i class="fas fa-phone-alt"></i> Llámanos</h2>
+                        <p>+52 55 1234 5678<br>Lunes a Viernes: 9am - 6pm</p>
+                        
+                        <h2><i class="fas fa-envelope"></i> Escríbenos</h2>
+                        <p>hola@naturalhearted.com<br>soporte@naturalhearted.com</p>
+                        
+                    </div>
+                    
+
+                </div>
+                
+                <!-- Columna derecha - Preguntas frecuentes -->
+                <div class="faq-section">
+                    <h2>Preguntas Frecuentes</h2>
+                    <div class="faq-tabs">
+                        <button class="tab-btn active" data-tab="envios">Envíos</button>
+                        <button class="tab-btn" data-tab="productos">Productos</button>
+                        <button class="tab-btn" data-tab="pagos">Pagos</button>
+                        <button class="tab-btn" data-tab="devoluciones">Devoluciones</button>
+                    </div>
+                    
+                    <div class="faq-content">
+                        <!-- Pestaña Envíos -->
+                        <div class="tab-pane active" id="envios">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Cuáles son los tiempos de entrega?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Los tiempos de entrega varían según tu ubicación:</p>
+                                    <ul>
+                                        <li><strong>Ciudad de México:</strong> 1-2 días hábiles</li>
+                                        <li><strong>Área metropolitana:</strong> 2-3 días hábiles</li>
+                                        <li><strong>Interior de la república:</strong> 3-5 días hábiles</li>
+                                    </ul>
+                                    <p>Los envíos se realizan de lunes a viernes. Los pedidos realizados después de las 2pm se procesan al siguiente día hábil.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Hacen envíos a todo México?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Sí, realizamos envíos a toda la República Mexicana a través de diferentes paqueterías. Para zonas rurales o remotas, los tiempos de entrega pueden extenderse.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Cómo puedo rastrear mi pedido?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con el número de guía y un enlace para rastrear tu paquete. También puedes ingresar a "Mis pedidos" en tu cuenta para ver el estado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pestaña Productos -->
+                        <div class="tab-pane" id="productos">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Sus productos son aptos para todas las razas?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>La mayoría de nuestros productos son aptos para todas las razas, pero algunos están específicamente formulados para tamaños o necesidades particulares. Te recomendamos revisar la descripción de cada producto o consultar con nuestro equipo si tienes dudas sobre qué producto es el mejor para tu mascota.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Dónde puedo ver la información nutricional?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Toda nuestra información nutricional está disponible en la página de cada producto. Si necesitas detalles adicionales o tienes preguntas específicas sobre ingredientes, no dudes en contactarnos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pestaña Pagos -->
+                        <div class="tab-pane" id="pagos">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Qué métodos de pago aceptan?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Aceptamos los siguientes métodos de pago:</p>
+                                    <ul>
+                                        <li>Tarjetas de crédito/débito (Visa, MasterCard, American Express)</li>
+                                        <li>PayPal</li>
+                                        <li>Transferencias bancarias</li>
+                                        <li>Pago en efectivo al recibir (solo CDMX y área metropolitana)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pestaña Devoluciones -->
+                        <div class="tab-pane" id="devoluciones">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>¿Cuál es su política de devoluciones?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Aceptamos devoluciones dentro de los 15 días posteriores a la recepción del producto, siempre y cuando esté en su empaque original y sin abrir. Para iniciar una devolución, por favor contáctanos con tu número de pedido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Platiquemos</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +52 55 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> hola@naturalhearted.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Aviso legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de envíos</a></li>
+                    <li><a href="#">Políticas de devoluciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Aviso de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Natural Hearted. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="ayuda.js"></script>
+</body>
+</html>
