@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto - Natural Hearted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="detalle.css">
+</head>
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="social-bar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="LOGO NATURAL-15.png" alt="Natural Hearted Logo" class="logo" />
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li class="dropdown">
+                <span class="dropdown-toggle">Acerca de <i class="fas fa-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- Menú hamburguesa para móviles -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Inicio</a> > <a href="productos.html">Productos</a> > <span>Alimento Premium para Perros</span>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="Patitas_pollo.png" alt="Alimento Premium para Perros" id="main-product-image">
+            </div>
+            <div class="thumbnails">
+                <div class="thumbnail active" data-image="Patitas_pollo.png">
+                    <img src="Patitas_pollo.png" alt="Miniatura 1">
+                </div>
+                <div class="thumbnail" data-image="Patitas_pollo.png">
+                    <img src="Patitas_pollo.png" alt="Miniatura 2">
+                </div>
+                <div class="thumbnail" data-image="Patitas_pollo.png">
+                    <img src="Patitas_pollo.png" alt="Miniatura 3">
+                </div>
+                <div class="thumbnail" data-image="Patitas_pollo.png">
+                    <img src="Patitas_pollo.png" alt="Miniatura 4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-info">
+            <div class="product-header">
+                <div class="product-category">Alimento seco • Adultos • Razas Medianas</div>
+                <h1 class="product-title">Alimento Premium Nutrición Completa para Perros</h1>
+                <div class="product-rating">
+                    <div class="product-rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="product-rating-count">(42 reseñas)</div>
+                </div>
+            </div>
+            
+            <div class="product-price">
+                <span class="current-price">$549.00</span>
+                <span class="original-price">$649.00</span>
+                <span class="discount">15% OFF</span>
+            </div>
+            
+            <div class="product-description">
+                <p>Nuestro alimento premium para perros está formulado con ingredientes naturales de la más alta calidad. Proporciona una nutrición completa y balanceada para perros adultos de razas medianas, con todos los nutrientes esenciales para mantener una salud óptima.</p>
+            </div>
+            
+            <div class="product-features">
+                <h3>Beneficios principales:</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Ingredientes 100% naturales</li>
+                    <li><i class="fas fa-check-circle"></i> Sin conservantes artificiales</li>
+                    <li><i class="fas fa-check-circle"></i> Con omega 3 y 6 para piel y pelaje saludable</li>
+                    <li><i class="fas fa-check-circle"></i> Prebióticos para una digestión sana</li>
+                    <li><i class="fas fa-check-circle"></i> Antioxidantes para el sistema inmunológico</li>
+                </ul>
+            </div>
+            
+            <div class="product-actions">
+                <div class="quantity-selector">
+                    <span class="quantity-label">Cantidad:</span>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" id="decrease-qty">-</button>
+                        <input type="number" class="quantity-input" id="product-qty" value="1" min="1" max="10">
+                        <button class="quantity-btn" id="increase-qty">+</button>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                    </button>
+                    
+                    <button class="paypal-btn">
+                        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+                        Pagar con PayPal
+                    </button>
+                </div>
+                
+                <div class="secondary-actions">
+                    <button class="wishlist-btn" id="add-to-wishlist">
+                        <i class="far fa-heart"></i> Agregar a favoritos
+                    </button>
+                    
+                    <button class="share-btn" id="share-product">
+                        <i class="fas fa-share-alt"></i> Compartir
+                    </button>
+                </div>
+            </div>
+            
+            <div class="shipping-info">
+                <h3><i class="fas fa-truck"></i> Envío y devoluciones</h3>
+                <p><span class="shipping-free">¡Envío gratis en pedidos superiores a $1200!</span></p>
+                <p>• Entregas en 2-4 días hábiles</p>
+                <p>• Devoluciones gratuitas dentro de los primeros 30 días</p>
+                <p>• Garantía de satisfacción del 100%</p>
+            </div>
+        </div>
+        
+        <div class="product-details-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Descripción</button>
+                <button class="tab-btn" data-tab="specs">Especificaciones</button>
+                <button class="tab-btn" data-tab="ingredients">Ingredientes</button>
+                <button class="tab-btn" data-tab="returns">Políticas de devolución</button>
+            </div>
+            
+            <div class="tab-content active" id="description-content">
+                <h3>Nutrición completa para tu mascota</h3>
+                <p>Nuestro alimento premium para perros está elaborado con los mejores ingredientes naturales, seleccionados cuidadosamente para proporcionar una dieta equilibrada y deliciosa para tu mascota. Formulado por veterinarios especialistas en nutrición animal, este producto ofrece:</p>
+                <ul>
+                    <li>Proteínas de alta calidad para el desarrollo muscular</li>
+                    <li>Carbohidratos complejos para energía sostenida</li>
+                    <li>Ácidos grasos omega para piel y pelaje saludables</li>
+                    <li>Vitaminas y minerales esenciales para el sistema inmunológico</li>
+                    <li>Prebióticos naturales para una digestión óptima</li>
+                </ul>
+                <p>Ideal para perros adultos de razas medianas (11-25 kg) con actividad moderada. Presentación en empaque de 7.5 kg.</p>
+            </div>
+            
+            <div class="tab-content" id="specs-content">
+                <table class="specs-table">
+                    <tr>
+                        <td>Peso neto</td>
+                        <td>7.5 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Edad recomendada</td>
+                        <td>Adultos (1-7 años)</td>
+                    </tr>
+                    <tr>
+                        <td>Tamaño de raza</td>
+                        <td>Mediana (11-25 kg)</td>
+                    </tr>
+                    <tr>
+                        <td>Proteína cruda</td>
+                        <td>24% mínimo</td>
+                    </tr>
+                    <tr>
+                        <td>Grasa cruda</td>
+                        <td>14% mínimo</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra cruda</td>
+                        <td>4% máximo</td>
+                    </tr>
+                    <tr>
+                        <td>Humedad</td>
+                        <td>10% máximo</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="tab-content" id="ingredients-content">
+                <h3>Ingredientes naturales de calidad</h3>
+                <p>Pollo deshidratado, maíz, arroz, trigo, harina de subproductos de pollo, grasa animal preservada con mixed tocopherols (fuente de vitamina E), harina de pescado, pulpa de remolacha, aceite de pescado, cloruro de potasio, cloruro de sodio, carbonato de calcio, vitaminas (A, D3, E, K, B1, B2, B6, B12, niacina, ácido fólico, biotina), minerales (hierro, zinc, manganeso, cobre, yodo, selenio), L-lisina, DL-metionina, antioxidantes naturales.</p>
+            </div>
+            
+            <div class="tab-content return-policy" id="returns-content">
+                <h3>Política de devoluciones y garantía</h3>
+                <p>En Natural Hearted, queremos que tú y tu mascota estén completamente satisfechos con su compra. Por eso ofrecemos:</p>
+                <ul>
+                    <li><strong>Devoluciones gratuitas:</strong> Si no estás satisfecho con el producto, puedes devolverlo dentro de los primeros 30 días posteriores a la compra para obtener un reembolso completo.</li>
+                    <li><strong>Proceso simple:</strong> Contacta a nuestro servicio al cliente para obtener una etiqueta de envío gratuita y instrucciones para la devolución.</li>
+                    <li><strong>Garantía de satisfacción:</strong> Tu satisfacción está garantizada. Si a tu mascota no le gusta el alimento, te reembolsaremos el importe completo.</li>
+                    <li><strong>Productos en perfecto estado:</strong> Aceptamos devoluciones de productos que estén en su empaque original y con al menos el 75% del contenido restante.</li>
+                </ul>
+                <p>Para más información, contacta a nuestro equipo de atención al cliente en hola@naturalhearted.com o al +52 55 1234 5678.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Platiquemos</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +52 55 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> hola@naturalhearted.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Aviso legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de envíos</a></li>
+                    <li><a href="#">Políticas de devoluciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Aviso de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Natural Hearted. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad para las miniaturas de imágenes
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('main-product-image');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Remover clase active de todas las miniaturas
+                thumbnails.forEach(t => t.classList.remove('active'));
+                // Agregar clase active a la miniatura clickeada
+                this.classList.add('active');
+                // Cambiar la imagen principal
+                mainImage.src = this.getAttribute('data-image');
+                mainImage.alt = this.querySelector('img').alt;
+            });
+        });
+        
+        // Funcionalidad para los tabs
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remover clase active de todos los botones y contenidos
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Agregar clase active al botón clickeado
+                this.classList.add('active');
+                
+                // Mostrar el contenido correspondiente
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(`${tabId}-content`).classList.add('active');
+            });
+        });
+        
+        // Funcionalidad para el selector de cantidad
+        const decreaseBtn = document.getElementById('decrease-qty');
+        const increaseBtn = document.getElementById('increase-qty');
+        const quantityInput = document.getElementById('product-qty');
+        
+        decreaseBtn.addEventListener('click', function() {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+        
+        increaseBtn.addEventListener('click', function() {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue < 10) {
+                quantityInput.value = currentValue + 1;
+            }
+        });
+        
+        // Funcionalidad para el botón de favoritos
+        const wishlistBtn = document.getElementById('add-to-wishlist');
+        
+        wishlistBtn.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('far')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                this.style.color = '#F44336';
+                alert('Producto agregado a favoritos');
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                this.style.color = '';
+                alert('Producto removido de favoritos');
+            }
+        });
+        
+        // Funcionalidad para el botón de compartir
+        const shareBtn = document.getElementById('share-product');
+        
+        shareBtn.addEventListener('click', function() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Natural Hearted - Alimento Premium para Perros',
+                    text: 'Mira este alimento premium para perros de Natural Hearted',
+                    url: window.location.href
+                })
+                .then(() => console.log('Contenido compartido exitosamente'))
+                .catch(error => console.log('Error al compartir:', error));
+            } else {
+                alert('Comparte este producto usando: ' + window.location.href);
+            }
+        });
+        
+        // Funcionalidad para el botón de agregar al carrito
+        const addToCartBtn = document.querySelector('.add-to-cart-btn');
+        
+        addToCartBtn.addEventListener('click', function() {
+            const quantity = parseInt(quantityInput.value);
+            alert(`¡${quantity} producto(s) agregado(s) al carrito!`);
+        });
+    </script>
+</body>
+</html>

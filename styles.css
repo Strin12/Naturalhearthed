@@ -1,7 +1,7 @@
 :root {
-    --primary: #ff9632;
-    --primary-light: #ffb366;
-    --secondary: #ffe834;
+    --primary: #0b62a9;
+    --primary-light: #ff9632;
+    --secondary: #ffffff;
     --light: #f5f5f5;
     --dark: #333;
     --gray: #777;
@@ -25,7 +25,7 @@ body {
 
 /* Header y Redes Sociales */
 .social-bar {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: white;
     padding: 8px 0;
     text-align: right;
@@ -33,7 +33,7 @@ body {
 }
 
 .social-bar a {
-    color: white;
+    color: var(--dark);
     margin-left: 15px;
     font-size: 1.1rem;
     transition: all 0.3s;
@@ -670,7 +670,7 @@ nav {
        /* Footer Mejorado */
         footer {
             background-color: var(--dark);
-            color: white;
+            color: var(--light);
             padding: 80px 5% 30px;
         }
         
@@ -684,7 +684,7 @@ nav {
         .footer-col h3 {
             font-size: 1.5rem;
             margin-bottom: 25px;
-            color: var(--secondary);
+            color: var(--primary-light);
             position: relative;
             display: inline-block;
         }
@@ -721,7 +721,7 @@ nav {
         
         .footer-col i {
             margin-right: 10px;
-            color: var(--primary);
+            color: var(--white);
             width: 20px;
             text-align: center;
         }
@@ -739,7 +739,7 @@ nav {
         }
         
         .footer-social a:hover {
-            color: var(--primary);
+            color: var(--white);
             transform: translateY(-3px);
         }
         

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Natural Hearted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="productos.css">
+
+</head>
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="social-bar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="LOGO NATURAL-15.png" alt="Natural Hearted Logo" class="logo" />
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li class="dropdown">
+                <span class="dropdown-toggle">Acerca de <i class="fas fa-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- Menú hamburguesa para móviles -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Inicio</a> > <span>Productos</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="products-container">
+        <!-- Filtros -->
+        <aside class="filters-sidebar">
+            <div class="filter-card">
+                <div class="filter-header">
+                    <h3>Filtros</h3>
+                    <button class="reset-filters">Restablecer</button>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Disponibilidad</h4>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="availability" value="in-stock" checked>
+                            <span>En existencia</span>
+                            <span class="availability-badge in-stock">32</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="availability" value="out-of-stock">
+                            <span>Agotado</span>
+                            <span class="availability-badge out-of-stock">5</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Precio</h4>
+                    <div class="price-filter">
+                        <div class="range-slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="1000" value="0" step="50">
+                            <input type="range" class="range-max" min="0" max="1000" value="1000" step="50">
+                        </div>
+                        <div class="price-inputs">
+                            <input type="number" class="input-min" value="0">
+                            <span>-</span>
+                            <input type="number" class="input-max" value="1000">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Categorías</h4>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="dry-food">
+                            <span>Alimento seco</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="wet-food">
+                            <span>Alimento húmedo</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="snacks">
+                            <span>Snacks y premios</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="puppy">
+                            <span>Para cachorros</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="adult">
+                            <span>Para adultos</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="senior">
+                            <span>Para senior</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="btn btn-primary">Aplicar filtros</button>
+                    <button class="btn btn-outline">Limpiar</button>
+                </div>
+            </div>
+            
+            <div class="filter-card">
+                <div class="filter-header">
+                    <h3>Marcas</h3>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="brand" value="natural-hearted">
+                        <span>Natural Hearted</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="brand" value="royal-canin">
+                        <span>Royal Canin</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="brand" value="hills">
+                        <span>Hill's Science Diet</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="brand" value="purina">
+                        <span>Purina Pro Plan</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="brand" value="eukanuba">
+                        <span>Eukanuba</span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Productos -->
+        <section class="products-section">
+            <div class="products-header">
+                <h2>Comida para perros</h2>
+                <select class="sort-select">
+                    <option value="featured">Destacados</option>
+                    <option value="price-low">Precio: Menor a Mayor</option>
+                    <option value="price-high">Precio: Mayor a Menor</option>
+                    <option value="name-asc">Nombre: A-Z</option>
+                    <option value="name-desc">Nombre: Z-A</option>
+                    <option value="newest">Más recientes</option>
+                    <option value="best-selling">Más vendidos</option>
+                </select>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Orejas.png" alt="Alimento para perro premium">
+                        <div class="product-badges">
+                            <span class="product-badge badge-new">Nuevo</span>
+                            <span class="product-badge badge-eco">Natural</span>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Alimento seco • Adultos</div>
+                        <h3 class="product-title">Alimento Premium Nutrición Completa</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$549.00</span>
+                            <span class="original-price">$649.00</span>
+                            <span class="discount">15% OFF</span>
+                        </div>
+                        <div class="stock-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="in-stock-text">En stock</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                            <button class="view-details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Patitas_pollo.png" alt="Snacks para perro">
+                        <div class="product-badges">
+                            <span class="product-badge badge-sale">Oferta</span>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Snacks • Todas las edades</div>
+                        <h3 class="product-title">Snacks Naturales de Pollo</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$189.00</span>
+                            <span class="original-price">$219.00</span>
+                            <span class="discount">14% OFF</span>
+                        </div>
+                        <div class="stock-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="in-stock-text">En stock</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                            <button class="view-details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Masticables.png" alt="Alimento para cachorros">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Alimento seco • Cachorros</div>
+                        <h3 class="product-title">Alimento para Cachorro Raza Pequeña</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(56)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$479.00</span>
+                        </div>
+                        <div class="stock-status">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span class="low-stock-text">Últimas unidades</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Agregar</button>
+                            <button class="view-details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Traqueas.png" alt="Alimento húmedo para perro">
+                        <div class="product-badges">
+                            <span class="product-badge badge-new">Nuevo</span>
+                        </div>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Alimento húmedo • Adultos</div>
+                        <h3 class="product-title">Pouch Pollo y Verduras</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(19)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$45.00</span>
+                            <span class="original-price">$52.00</span>
+                        </div>
+                        <div class="stock-status">
+                            <i class="fas fa-times-circle"></i>
+                            <span class="out-of-stock-text">Agotado</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" disabled><i class="fas fa-shopping-cart"></i> Agotado</button>
+                            <button class="view-details"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paginación -->
+            <div class="pagination">
+                <a href="#" class="pagination-item"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="pagination-item active">1</a>
+                <a href="#" class="pagination-item">2</a>
+                <a href="#" class="pagination-item">3</a>
+                <a href="#" class="pagination-item">4</a>
+                <a href="#" class="pagination-item">5</a>
+                <a href="#" class="pagination-item"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Platiquemos</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +52 55 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> hola@naturalhearted.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Aviso legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de envíos</a></li>
+                    <li><a href="#">Políticas de devoluciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Aviso de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Natural Hearted. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad básica para los filtros de precio
+        const rangeMin = document.querySelector('.range-min');
+        const rangeMax = document.querySelector('.range-max');
+        const inputMin = document.querySelector('.input-min');
+        const inputMax = document.querySelector('.input-max');
+        const progress = document.querySelector('.progress');
+        
+        // Valores iniciales
+        let minVal = parseInt(rangeMin.value);
+        let maxVal = parseInt(rangeMax.value);
+        
+        // Actualizar la barra de progreso
+        function updateProgress() {
+            progress.style.left = (minVal / rangeMin.max) * 100 + '%';
+            progress.style.right = 100 - (maxVal / rangeMax.max) * 100 + '%';
+        }
+        
+        // Event listeners para los range inputs
+        rangeMin.addEventListener('input', function() {
+            minVal = parseInt(this.value);
+            if (minVal > maxVal) {
+                minVal = maxVal;
+                this.value = minVal;
+            }
+            inputMin.value = minVal;
+            updateProgress();
+        });
+        
+        rangeMax.addEventListener('input', function() {
+            maxVal = parseInt(this.value);
+            if (maxVal < minVal) {
+                maxVal = minVal;
+                this.value = maxVal;
+            }
+            inputMax.value = maxVal;
+            updateProgress();
+        });
+        
+        // Event listeners para los input numbers
+        inputMin.addEventListener('change', function() {
+            minVal = parseInt(this.value);
+            if (minVal < parseInt(rangeMin.min)) minVal = parseInt(rangeMin.min);
+            if (minVal > parseInt(rangeMin.max)) minVal = parseInt(rangeMin.max);
+            if (minVal > maxVal) minVal = maxVal;
+            this.value = minVal;
+            rangeMin.value = minVal;
+            updateProgress();
+        });
+        
+        inputMax.addEventListener('change', function() {
+            maxVal = parseInt(this.value);
+            if (maxVal < parseInt(rangeMax.min)) maxVal = parseInt(rangeMax.min);
+            if (maxVal > parseInt(rangeMax.max)) maxVal = parseInt(rangeMax.max);
+            if (maxVal < minVal) maxVal = minVal;
+            this.value = maxVal;
+            rangeMax.value = maxVal;
+            updateProgress();
+        });
+        
+        // Inicializar la barra de progreso
+        updateProgress();
+        
+        // Funcionalidad para los botones de wishlist
+        const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+        wishlistButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.style.color = '#F44336';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.style.color = '';
+                }
+            });
+        });
+
+   document.querySelectorAll(".view-details").forEach(btn => {
+    btn.addEventListener("click", function() {
+        window.location.href = "detalleproducto.html";
+    });
+});
+
+    </script>
+</body>
+</html>

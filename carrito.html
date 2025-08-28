@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Natural Hearted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="carrito.css">
+
+</head>
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="social-bar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="LOGO NATURAL-15.png" alt="Natural Hearted Logo" class="logo" />
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li class="dropdown">
+                <span class="dropdown-toggle">Acerca de <i class="fas fa-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- Menú hamburguesa para móviles -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Inicio</a> > <span>Carrito</span>
+    </div>
+
+    <!-- Contenido principal del carrito -->
+    <main class="cart-container">
+        <div class="cart-items-container">
+            <h1 class="cart-title">Tu Carrito de Compras</h1>
+            
+            <div class="cart-items">
+                <!-- Ejemplo de producto en el carrito -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="Masticables.png" alt="Aceite Esencial de Lavanda">
+                    </div>
+                    <div class="item-details">
+                        <h3>Masticables</h3>
+                        <p>Premios masticables que ayudan a la salud dental de tu mascota mientras disfruta de un snack nutritivo./p>
+                        <div class="item-price">$299.00 MXN</div>
+                    </div>
+                    <div class="item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Segundo producto -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="Deshidratados.png" alt="Jabón de Arcilla">
+                    </div>
+                    <div class="item-details">
+                        <h3>Deshidratados</h3>
+                        <p>Snacks deshidratados que conservan todos los nutrientes naturales, ideales para recompensas y entrenamiento.</p>
+                        <div class="item-price">$145.00 MXN</div>
+                    </div>
+                    <div class="item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="2" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Tercer producto -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="Galletas.png" alt="Crema Facial">
+                    </div>
+                    <div class="item-details">
+                        <h3>Galletas</h3>
+                        <p>Deliciosas galletas horneadas con ingredientes 100% naturales, sin conservadores ni colorantes artificiales.</p>
+                        <div class="item-price">$420.00 MXN</div>
+                    </div>
+                    <div class="item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <h2 class="summary-title">Resumen de compra</h2>
+            
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span>$864.00 MXN</span>
+            </div>
+            
+            <div class="summary-item">
+                <span>Envío</span>
+                <span>$85.00 MXN</span>
+            </div>
+            
+            <div class="summary-item">
+                <span>Descuento</span>
+                <span style="color: var(--success);">-$50.00 MXN</span>
+            </div>
+            
+            <div class="summary-total">
+                <span>Total</span>
+                <span>$899.00 MXN</span>
+            </div>
+            
+            <button class="checkout-btn">Proceder al pago</button>
+            
+            <div style="text-align: center;">
+                <a href="productos.html" class="continue-shopping">Seguir comprando</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Platiquemos</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +52 55 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> hola@naturalhearted.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Aviso legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de envíos</a></li>
+                    <li><a href="#">Políticas de devoluciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Aviso de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Natural Hearted. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad para el carrito
+        document.addEventListener('DOMContentLoaded', function() {
+            // Selectores
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+            const minusButtons = document.querySelectorAll('.quantity-btn.minus');
+            const plusButtons = document.querySelectorAll('.quantity-btn.plus');
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            
+            // Actualizar cantidades
+            quantityInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    if (this.value < 1) this.value = 1;
+                    updateCartTotals();
+                });
+            });
+            
+            // Botones de disminuir cantidad
+            minusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.nextElementSibling;
+                    if (input.value > 1) {
+                        input.value--;
+                        updateCartTotals();
+                    }
+                });
+            });
+            
+            // Botones de aumentar cantidad
+            plusButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    input.value++;
+                    updateCartTotals();
+                });
+            });
+            
+            // Botones de eliminar producto
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const item = this.closest('.cart-item');
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.remove();
+                        updateCartTotals();
+                        checkEmptyCart();
+                    }, 300);
+                });
+            });
+            
+            // Función para actualizar totales (simulada)
+            function updateCartTotals() {
+                console.log('Actualizando totales del carrito...');
+                // Aquí iría la lógica real para calcular el total
+            }
+            
+            // Función para verificar si el carrito está vacío
+            function checkEmptyCart() {
+                const cartItems = document.querySelectorAll('.cart-item');
+                if (cartItems.length === 0) {
+                    // Mostrar mensaje de carrito vacío
+                    const cartContainer = document.querySelector('.cart-items-container');
+                    cartContainer.innerHTML = `
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Tu carrito está vacío</h3>
+                            <p>Parece que aún no has agregado productos a tu carrito.</p>
+                            <a href="productos.html" class="shop-now-btn">Descubrir productos</a>
+                        </div>
+                    `;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

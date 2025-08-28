@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Natural Hearted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contacto.css">
+
+</head>
+<body>
+    <!-- Barra de Redes Sociales -->
+    <div class="social-bar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <!-- Navbar -->
+    <nav>
+        <img src="LOGO NATURAL-15.png" alt="Natural Hearted Logo" class="logo">
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li class="dropdown">
+                <span class="dropdown-toggle">Acerca de <i class="fas fa-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        
+        <!-- Menú hamburguesa para móviles -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Comentario o mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <div class="map-container">
+                <!-- Mapa de Ciudad de México (coordenadas aproximadas del centro) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120409.09639434225!2d-99.181456!3d19.390519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1652830360527!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Platiquemos</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +52 55 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> hola@naturalhearted.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</li>
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 6pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Aviso legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de envíos</a></li>
+                    <li><a href="#">Políticas de devoluciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Aviso de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Natural Hearted. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="nosotros.js"></script>
+    <script>
+        // Validación básica del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validación simple
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                // Aquí normalmente se enviaría el formulario
+                alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                this.reset();
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        });
+    </script>
+</body>
+</html>
